@@ -1,5 +1,5 @@
 GitBook Plugin: Edit Link
-======================================
+=========================
 
 This GitBook Plugin adds an "Edit This Page" link to every page's
 toolbar. The link targets that page's source file on Github, or Gitlab,
