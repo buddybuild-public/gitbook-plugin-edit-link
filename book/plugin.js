@@ -4,7 +4,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         var base     = conf.base;
         var icon     = ("icon" in conf)     ? conf.icon     : 'fa fa-edit';
         var label    = ("label" in conf)    ? conf.label    : "Edit This Page";
-        var title    = ("title" in conf)    ? conf.title    : '';
+        var aria     = ("aria" in conf)     ? conf.aria     : '';
         var position = ("position" in conf) ? conf.position : 'left';
 
         var lang = gitbook.state.innerLanguage;
@@ -25,7 +25,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         gitbook.toolbar.createButton({
             icon: icon,
             text: label,
-            label: title,
+            label: aria,
             position: position,
             onClick: function() {
                 var filepath = gitbook.state.filepath;

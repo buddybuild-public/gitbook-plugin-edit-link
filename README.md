@@ -25,14 +25,16 @@ or any repo.
 
 ```
 {
-    "gitbook": "2.0.1",
-    "plugins": ["edit-link"],
-    "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-                "label": "Edit This Page"
-            }
+  "gitbook": "2.0.1",
+  "plugins": [
+    "edit-link@https://github.com/buddybuild-public/gitbook-plugin-edit-link.git"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+      "label": "Edit This Page"
     }
+  }
 }
 ```
 
@@ -40,17 +42,19 @@ or any repo.
 
 ```
 {
-    "gitbook": "2.0.1",
-    "plugins": ["edit-link"],
-    "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-                "label": {
-                    "en": "Edit This Page",
-                    "de": "Seite bearbeiten"
-                }
-            }
+  "gitbook": "2.0.1",
+  "plugins": [
+    "edit-link@https://github.com/buddybuild-public/gitbook-plugin-edit-link.git"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+      "label": {
+        "en": "Edit This Page",
+        "de": "Seite bearbeiten"
+      }
     }
+  }
 }
 ```
 
@@ -58,14 +62,14 @@ or any repo.
 
 ```
 {
-    "gitbook": "1.5.0",
-    "plugins": ["edit-link@1.1.0"],
-    "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-                "label": "Edit This Page"
-            }
+  "gitbook": "1.5.0",
+  "plugins": ["edit-link@1.1.0"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+      "label": "Edit This Page"
     }
+  }
 }
 ```
 
@@ -86,7 +90,7 @@ the `pluginsConfig` => `edit-link` section, as demonstrated above):
               `fa fa-edit` (a [FontAwesome](http://fontawesome.io/icons/)
               icon).
 - `label`:    The label for the button. Defaults to `Edit This Page`.
-- `title`:    The title for the button (tooltip popup text on mouseover).
+- `aria`:     The ARIA label for the button.
 - `position`: The position of the button in the toolbar, `left` or
               `right`. Defaults to `left`.
 
@@ -115,9 +119,9 @@ the `pluginsConfig` => `edit-link` section, as demonstrated above):
 
 - Added defense agaist undefined GitBook language, per
   [@matsu-chara](https://github.com/matsu-chara/gitbook-plugin-edit-link/commit/5ebbd9f0b813df974c881753c56b81d529476699).
-- Added option to specify the `title`.
 - Added option to specify the `icon`, per
   [@amakrishnamundru](https://github.com/ramakrishnamundru/gitbook-plugin-edit-link/commit/46c29089afc70db65aba6c07c7302a1c341f3560).
+- Added option to specify the `aria` label.
 - Added option to specify the `position` in the toolbar.
 - Updated `README.md`:
   - Removed deprecated "Known Issue" and "How this work?" sections.
