@@ -113,9 +113,11 @@ the `pluginsConfig` => `edit-link` section, as demonstrated above):
 
 **2.1 - 09 August 2017**
 
-- Added defense agaist undefined GitBook language, per @matsu-chara.
+- Added defense agaist undefined GitBook language, per
+  [@matsu-chara](https://github.com/matsu-chara/gitbook-plugin-edit-link/commit/5ebbd9f0b813df974c881753c56b81d529476699).
 - Added option to specify the `title`.
-- Added option to specify the `icon`, per @amakrishnamundru.
+- Added option to specify the `icon`, per
+  [@amakrishnamundru](https://github.com/ramakrishnamundru/gitbook-plugin-edit-link/commit/46c29089afc70db65aba6c07c7302a1c341f3560).
 - Added option to specify the `position` in the toolbar.
 - Updated `README.md`:
   - Removed deprecated "Known Issue" and "How this work?" sections.
