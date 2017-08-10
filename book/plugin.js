@@ -6,6 +6,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         var label    = ("label" in conf)    ? conf.label    : "Edit This Page";
         var aria     = ("aria" in conf)     ? conf.aria     : '';
         var position = ("position" in conf) ? conf.position : 'left';
+        var cssclass = ("cssclass" in conf) ? conf.cssclass : '';
 
         var lang = gitbook.state.innerLanguage;
         if (lang) {
@@ -27,6 +28,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             text: label,
             label: aria,
             position: position,
+            className: cssclass,
             onClick: function() {
                 var filepath = gitbook.state.filepath;
                 window.open(base + lang + filepath);

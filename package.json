@@ -2,7 +2,7 @@
     "name": "gitbook-plugin-edit-link",
     "description": "GitBook Plugin to add an \"Edit this page\" link to every page. Link target will be that page's source file on GitHub, or GitLab, or any repo.",
     "main": "index.js",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "author": "Ewan Edwards <ewan@buddybuild.com>",
     "contributors": [
         {
@@ -61,15 +61,19 @@
                 "title": "Label for the edit button",
                 "default": "Edit This Page"
             },
-            "title": {
+            "aria": {
                 "type": "string",
-                "title": "Title for the edit button",
+                "title": "ARIA label for the edit button",
                 "default": ""
             },
             "position": {
                 "type": "string",
-                "title": "Position in the toolbar, left or right",
+                "title": "Button position in the toolbar, left or right",
                 "default": "left"
+            },
+            "cssclass": {
+                "type": "string",
+                "title": "Custom CSS class name to add to the edit button"
             }
         }
     }

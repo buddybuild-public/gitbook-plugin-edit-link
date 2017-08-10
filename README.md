@@ -115,6 +115,11 @@ the `pluginsConfig` => `edit-link` section, as demonstrated above):
 
 ## Changelog
 
+**2.1.1 - 10 August 2017**
+
+- Added option to specify a custom CSS class, `cssclass`.
+- Renamed `title` to `aria` in `package.json`.
+
 **2.1 - 09 August 2017**
 
 - Added defense agaist undefined GitBook language, per
